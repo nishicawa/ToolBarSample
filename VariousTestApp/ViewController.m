@@ -9,6 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *Label1;
+@property (weak, nonatomic) IBOutlet UILabel *Label2;
+@property (weak, nonatomic) IBOutlet UILabel *Label3;
 
 @end
 
@@ -24,6 +27,19 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (IBAction)Btn1:(id)sender {
+    self.Label1.text = @"へろー";
+}
+
+- (IBAction)Btn2:(id)sender {
+    self.Label2.text = @"ワーオ";
+}
+
+- (IBAction)Btn3:(id)sender {
+    self.Label3.text = @"ぺろりんちょ！";
 }
 
 @end
